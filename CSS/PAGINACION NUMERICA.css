@@ -1,0 +1,79 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #06b300;
+  margin: center;
+}
+
+.pagination .pages {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Asegúrate de eliminar cualquier margen que pueda afectar el centrado */
+  flex-wrap: wrap;
+}
+
+.pagination .pages li {
+  margin: 5px;
+}
+
+.pagination .pages a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  background-color: #000000;
+  border-radius: 5px;
+  display: block;
+}
+
+.pagination .pages a:hover {
+  background-color: #ff0000;
+}
+
+.pagination .pages .active {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .pagination button, .pagination .pages a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    flex-direction: column;
+    align-items: center; /* Añadir esta línea para asegurar el centrado vertical */
+  }
+
+  .pagination .pages {
+    justify-content: center;
+    width: 100%; /* Asegúrate de que tome todo el ancho disponible */
+  }
+
+  .pagination .pages li {
+    width: 100%; /* Asegúrate de que cada item tome todo el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra los items individualmente */
+  }
+}

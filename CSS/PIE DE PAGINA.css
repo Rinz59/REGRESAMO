@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #05750b91;
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -17,7 +17,7 @@
 /* Media query para hacer responsive el tamaño de la fuente y el padding */
 @media (max-width: 768px) {
     .footer {
-        padding: 32px 0; /* Ajusta el padding para pantallas más pequeñas */
+        padding: 60px 0; /* Ajusta el padding para pantallas más pequeñas */
         font-size: 18px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
     }
     .container {
